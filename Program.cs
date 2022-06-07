@@ -14,21 +14,77 @@ namespace ShootingDice
             Player player2 = new Player();
             player2.Name = "Sue";
 
-            player2.Play(player1);
+            SmackTalkingPlayer vish = new SmackTalkingPlayer()
+            {
+                Name = "Vishal",
+                Taunt = "You suck, you jackass!"
+            };
+
+            OneHigherPlayer wes = new OneHigherPlayer()
+            {
+                Name = "Wes"
+            };
+
+            HumanPlayer tory = new HumanPlayer()
+            {
+                Name = "Tory"
+            };
+
+            CreativeSmackTalkingPlayer andrew = new CreativeSmackTalkingPlayer()
+            {
+                Name = "Andrew"
+            };
+
+            SoreLoserPlayer cory = new SoreLoserPlayer()
+            {
+                Name = "Cory"
+            };
+
+            UpperHalfPlayer chris = new UpperHalfPlayer()
+            {
+                Name = "Chris"
+            };
+
+            SoreLoserUpperHalfPlayer josh = new SoreLoserUpperHalfPlayer
+            {
+                Name = "Josh"
+            };
+
+            josh.Play(player1);
+
+            // chris.Play(player1);
+
+            // cory.Play(player1);
+
+            // andrew.Play(player1);
+
+            // tory.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            // wes.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            // vish.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            // player2.Play(player1);
 
             Console.WriteLine("-------------------");
 
             Player player3 = new Player();
             player3.Name = "Wilma";
 
-            player3.Play(player2);
+            // player3.Play(player2);
 
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
 
-            player1.Play(large);
+            // player1.Play(large);
 
             Console.WriteLine("-------------------");
 
@@ -36,7 +92,7 @@ namespace ShootingDice
                 player1, player2, player3, large
             };
 
-            PlayMany(players);
+            // PlayMany(players);
         }
 
         static void PlayMany(List<Player> players)
